@@ -31,4 +31,4 @@ Create .env.local: NEXT_PUBLIC_API_URL=http://localhost:3001/api
 # Backend Setup
 
 npm install
-npm start
+npm run dev
