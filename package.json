@@ -2,8 +2,9 @@
   "name": "todo-app_back",
   "version": "0.1.0",
   "private": true,
+  "main": "src/server.ts",
   "scripts": {
-    "dev": "nodemon src/server.ts"
+    "start": "nodemon src/server.ts"
   },
   "dependencies": {
     "cors": "^2.8.6",
