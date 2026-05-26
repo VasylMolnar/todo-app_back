@@ -3,7 +3,7 @@ import { Request, Response } from "express";
 
 export const getTodos = (req: Request, res: Response) => {
   const start = Number(req.query["pagination[start]"]) || 0;
-  const limit = Number(req.query["pagination[limit]"]) || 20;
+  const limit = Number(req.query["pagination[limit]"]) || 10;
   const category = req.query.category as string | undefined;
 
   db.get("SELECT COUNT(*) as count FROM todos", [], (err, countRow: any) => {
