@@ -5,7 +5,7 @@ import todoRoutes from "./routes/todo.routes";
 import categoriesRoutes from "./routes/categories.routes";
 import "./db";
 
-const app = express();
+export const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors());
